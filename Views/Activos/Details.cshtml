@@ -1,0 +1,50 @@
+﻿@model ExamenComercioElectronico.Models.Activos
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Activos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Departamentos.nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Departamentos.nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Funcionarios.nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Funcionarios.nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.marca)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.marca)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.numeroPlaca }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
